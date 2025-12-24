@@ -1,4 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- CAPTCHA Logic Start ---
+    const protectedLinks = document.querySelectorAll('.protected-link');
+    const captchaModal = document.getElementById('captcha-modal');
+    const captchaCheckbox = document.getElementById('captcha-checkbox');
+    const captchaConfirm = document.getElementById('captcha-confirm');
+    const captchaCancel = document.getElementById('captcha-cancel');
+
+    let targetLink = null;
+
+    protectedLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            targetLink = link.dataset.link;
+            if (captchaModal) captchaModal.classList.add('active');
+        });
+    });
+
+    if (captchaCheckbox) {
+        captchaCheckbox.addEventListener('change', () => {
+            captchaConfirm.disabled = !captchaCheckbox.checked;
+        });
+    }
+
+    if (captchaConfirm) {
+        captchaConfirm.addEventListener('click', () => {
+            if (targetLink) {
+                window.open(targetLink, '_blank');
+            }
+            resetCaptcha();
+        });
+    }
+
+    if (captchaCancel) {
+        captchaCancel.addEventListener('click', resetCaptcha);
+    }
+
+    function resetCaptcha() {
+        if (captchaModal) captchaModal.classList.remove('active');
+        if (captchaCheckbox) captchaCheckbox.checked = false;
+        if (captchaConfirm) captchaConfirm.disabled = true;
+        targetLink = null;
+    }
+    // --- CAPTCHA Logic End ---
+
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.querySelector('.nav-list');

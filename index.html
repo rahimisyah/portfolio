@@ -12,7 +12,21 @@
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
 </head>
+<div id="captcha-modal" class="captcha-overlay">
+    <div class="captcha-box">
+        <h3>Verify you are human</h3>
 
+        <label class="captcha-check">
+            <input type="checkbox" id="captcha-checkbox">
+            <span>I am not a robot</span>
+        </label>
+
+        <div class="captcha-actions">
+            <button id="captcha-cancel">Cancel</button>
+            <button id="captcha-confirm" disabled>Continue</button>
+        </div>
+    </div>
+</div>
 <body>
 
     <nav id="navbar">
@@ -158,19 +172,39 @@
             </div>
         </section>
 
-        <section id="contact">
-            <h2>CONTACT</h2>
-            <div class="contact-container">
-                <a href="#" class="contact-link">
-                    <span class="link-text">LINKEDIN</span>
-                    <span class="link-arrow">↗</span>
-                </a>
-                <a href="mailto:email@example.com" class="contact-link">
-                    <span class="link-text">EMAIL</span>
-                    <span class="link-arrow">↗</span>
-                </a>
-            </div>
-        </section>
+<section id="contact">
+    <h2>CONTACT</h2>
+
+    <div class="contact-container">
+
+        <!-- LinkedIn -->
+<a href="#"
+   class="contact-link protected-link"
+   data-link="https://www.linkedin.com/in/rahimisyahman">
+
+    <div class="link-content">
+        <img src="assets/icons/linkedin.png" alt="LinkedIn" class="contact-img">
+        <span class="link-text">LINKEDIN</span>
+    </div>
+
+    <span class="link-arrow">↗</span>
+</a>
+
+<!-- Gmail -->
+<a href="#"
+   class="contact-link protected-link"
+   data-link="https://mail.google.com/mail/?view=cm&fs=1&to=rahimisyah217@gmail.com">
+
+    <div class="link-content">
+        <img src="assets/icons/gmail.png" alt="Gmail" class="contact-img">
+        <span class="link-text">EMAIL</span>
+    </div>
+
+    <span class="link-arrow">↗</span>
+</a>
+
+    </div>
+</section>
     </main>
 
     <script src="script.js"></script>
