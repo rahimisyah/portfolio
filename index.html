@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Rahimi Syahman</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<div id="captcha-modal" class="captcha-overlay">
-    <div class="captcha-box">
-        <h3>Verify you are human</h3>
 
-        <label class="captcha-check">
-            <input type="checkbox" id="captcha-checkbox">
-            <span>I am not a robot</span>
-        </label>
-
-        <div class="captcha-actions">
-            <button id="captcha-cancel">Cancel</button>
-            <button id="captcha-confirm" disabled>Continue</button>
+<body>
+    <div id="captcha-modal" class="captcha-overlay">
+        <div class="captcha-box">
+            <h3>Verify you are human</h3>
+            <label class="captcha-check">
+                <input type="checkbox" id="captcha-checkbox">
+                <span>I am not a robot</span>
+            </label>
+            <div class="captcha-actions">
+                <button id="captcha-cancel">Cancel</button>
+                <button id="captcha-confirm" disabled>Continue</button>
+            </div>
         </div>
     </div>
-</div>
-<body>
 
     <nav id="navbar">
         <div class="logo">RS</div>
@@ -37,21 +34,11 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-list">
-            <li><a href="#home" class="nav-link"><span data-text="Home">Home</span>
-                    <div class="scan-line"></div>
-                </a></li>
-            <li><a href="#about" class="nav-link"><span data-text="About Me">About Me</span>
-                    <div class="scan-line"></div>
-                </a></li>
-            <li><a href="#projects" class="nav-link"><span data-text="Projects">Projects</span>
-                    <div class="scan-line"></div>
-                </a></li>
-            <li><a href="#certifications" class="nav-link"><span data-text="Certifications">Certifications</span>
-                    <div class="scan-line"></div>
-                </a></li>
-            <li><a href="#contact" class="nav-link"><span data-text="Contact">Contact</span>
-                    <div class="scan-line"></div>
-                </a></li>
+            <li><a href="#home" class="nav-link"><span data-text="Home">Home</span><div class="scan-line"></div></a></li>
+            <li><a href="#about" class="nav-link"><span data-text="About Me">About Me</span><div class="scan-line"></div></a></li>
+            <li><a href="#projects" class="nav-link"><span data-text="Projects">Projects</span><div class="scan-line"></div></a></li>
+            <li><a href="#certifications" class="nav-link"><span data-text="Certifications">Certifications</span><div class="scan-line"></div></a></li>
+            <li><a href="#contact" class="nav-link"><span data-text="Contact">Contact</span><div class="scan-line"></div></a></li>
         </ul>
     </nav>
 
@@ -61,21 +48,22 @@
                 <h1 class="glitch" data-text="MY NAME">Rahimi Syahman</h1>
                 <p class="subtitle">PORTFOLIO</p>
             </div>
-            <div class="scroll-indicator">
-                <span>SCROLL</span>
-            </div>
+            <div class="scroll-indicator"><span>SCROLL</span></div>
         </section>
 
         <section id="about">
             <h2>ABOUT ME</h2>
             <div class="about-container">
                 <div class="about-frame">
-                    <div class="placeholder-img">IMG</div>
+                    <img src="assets/images/rahimi.png" alt="Rahimi's Portrait" class="about-img">
                 </div>
                 <div class="about-text">
                     <p>
-                        I am a creative professional dedicated to building unique digital experiences.
-                        With a focus on minimalist aesthetics and functional design, I bring ideas to life.
+                        I love exploring the most streamlined ways to build things. I'm a fan of the 
+                        <span class="keyword">vibe coding era</span>, but I'm a <span class="emphasis">firm believer</span> 
+                        that you have to understand the <span class="highlight">roots</span> for the code to be 
+                        <span class="highlight">truly effective</span>. It's all about leveraging modern speed without 
+                        losing sight of the <span class="keyword">technical foundation</span>.
                     </p>
                 </div>
             </div>
@@ -84,130 +72,54 @@
         <section id="projects">
             <h2>PROJECTS</h2>
             <div class="inventory-grid">
-                <!-- Project 1 -->
                 <div class="inventory-item">
                     <div class="item-header">
                         <span class="item-id">#001</span>
                         <span class="item-title">Project Digital MDA Mobile Apps</span>
                     </div>
                     <div class="item-preview">
-                        <div class="placeholder-asset">ASSET</div>
+                        <img src="assets/images/mda.png" alt="Digital MDA Mobile App Preview" class="project-img">
                     </div>
                     <div class="item-desc">
-                        Completed my practical training at Medical Device Authority, Ministry of Health Malaysia,
-                        where I built a mobile app. I handled frontend & backend development
-                        for a seamless user experience & robust data management.
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="inventory-item">
-                    <div class="item-header">
-                        <span class="item-id">#002</span>
-                        <span class="item-title">Project Beta</span>
-                    </div>
-                    <div class="item-preview">
-                        <div class="placeholder-asset">ASSET</div>
-                    </div>
-                    <div class="item-desc">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="inventory-item">
-                    <div class="item-header">
-                        <span class="item-id">#003</span>
-                        <span class="item-title">Project Gamma</span>
-                    </div>
-                    <div class="item-preview">
-                        <div class="placeholder-asset">ASSET</div>
-                    </div>
-                    <div class="item-desc">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
+                        Completed my practical training at Medical Device Authority, Ministry of Health Malaysia, 
+                        where I built a mobile app. I handled frontend & backend development.
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="certifications">
-            <div class="section-header">
-                <h2>CERTIFICATIONS</h2>
-                <div class="carousel-nav">
-                    <button id="prevCert" class="nav-btn">←</button>
-                    <button id="nextCert" class="nav-btn">→</button>
-                </div>
-            </div>
-            <div class="cert-carousel">
-                <!-- Certification 1 -->
-                <div class="cert-item">
-                    <div class="cert-preview">
-                        <div class="placeholder-cert">CERT 1</div>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Certification Alpha</h3>
-                        <p>Awarded for excellence in digital architecture and minimalist design principles.</p>
-                    </div>
-                </div>
-                <!-- Certification 2 -->
-                <div class="cert-item">
-                    <div class="cert-preview">
-                        <div class="placeholder-cert">CERT 2</div>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Certification Beta</h3>
-                        <p>Mastery of advanced web technologies and responsive interface development.</p>
-                    </div>
-                </div>
-                <!-- Certification 3 -->
-                <div class="cert-item">
-                    <div class="cert-preview">
-                        <div class="placeholder-cert">CERT 3</div>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Certification Gamma</h3>
-                        <p>Professional recognition for innovative problem solving and code optimization.</p>
-                    </div>
-                </div>
+            <h2>CERTIFICATIONS</h2>
+            <div class="cert-text-container">
+                <p class="cert-message">
+                    In my cloud student era. ☁️ Networking logic is currently occupying my last two brain cells rent-free, 
+                    but I'm making moves. No official certs in the bag yet, just letting the knowledge render. 
+                    It's a slow burn, stay tuned twin 🌟
+                </p>
             </div>
         </section>
 
-<section id="contact">
-    <h2>CONTACT</h2>
-
-    <div class="contact-container">
-
-        <!-- LinkedIn -->
-<a href="#"
-   class="contact-link protected-link"
-   data-link="https://www.linkedin.com/in/rahimisyahman">
-
-    <div class="link-content">
-        <img src="assets/icons/linkedin.png" alt="LinkedIn" class="contact-img">
-        <span class="link-text">LINKEDIN</span>
-    </div>
-
-    <span class="link-arrow">↗</span>
-</a>
-
-<!-- Gmail -->
-<a href="#"
-   class="contact-link protected-link"
-   data-link="https://mail.google.com/mail/?view=cm&fs=1&to=rahimisyah217@gmail.com">
-
-    <div class="link-content">
-        <img src="assets/icons/gmail.png" alt="Gmail" class="contact-img">
-        <span class="link-text">EMAIL</span>
-    </div>
-
-    <span class="link-arrow">↗</span>
-</a>
-
-    </div>
-</section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <div class="contact-container">
+                <a href="#" class="contact-link protected-link" data-link="https://www.linkedin.com/in/rahimisyahman">
+                    <div class="link-content">
+                        <img src="assets/icons/linkedin.png" alt="LinkedIn" class="contact-img">
+                        <span class="link-text">LINKEDIN</span>
+                    </div>
+                    <span class="link-arrow">↗</span>
+                </a>
+                <a href="#" class="contact-link protected-link" data-link="https://mail.google.com/mail/?view=cm&fs=1&to=rahimisyah217@gmail.com">
+                    <div class="link-content">
+                        <img src="assets/icons/gmail.png" alt="Gmail" class="contact-img">
+                        <span class="link-text">EMAIL</span>
+                    </div>
+                    <span class="link-arrow">↗</span>
+                </a>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
 </body>
-
 </html>
